@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Property Example</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    var person = {
+      firstname: "Jane",
+      age: 32
+    };
+
+    // Scenario 2: Delete age first, then show (shows "undefined")
+    delete person.age;
+    document.getElementById("demo").innerHTML =
+      person.firstname + " is " + person.age + " years old.";
+  </script>
+</body>
+</html>

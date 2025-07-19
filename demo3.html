@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>O(n!) and Factorial example</title>
+</head>
+<body>
+  <p>O(n!) and Factorial example</p>
+  <script>
+    function factorial(n) {
+      if (n <= 1) return 1;
+      return n * factorial(n - 1);
+    }
+
+    console.log(factorial(1));
+    console.log(factorial(10));
+    console.log(factorial(12));
+  </script>
+</body>
+</html>
